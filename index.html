@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Demis Hassabis</title>
+    <title>Demmis Hassabis</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style1.css">
 
 </head>
 
@@ -17,33 +17,53 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo.png" alt="Logo">
+                <img src="images/final.png" alt="Logo">
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="biography.html">Biography</a>
+                <li><a href="biography.html">Biography <span class="check">&#10003;</span></a>
                 </li>
                 <li>
-                    <a href="deepmind.html">DeepMind</a>
+                    <a href="deepmind.html">DeepMind <span class="check">&#10003;</span></a>
                 </li>
-                <li>>
-                    <a href="awards.html">Awards</a>
+                <li>
+                    <a href="awards.html">Awards & Achievements <span class="check">&#10003;</span></a>
                 </li>
             </ul>
         </nav>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+            &#9776;
+        </button>
     </header>
 
+    <!-- Mobile slide-down menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMenuBtn" aria-label="Close menu">&#10005;</button>
+        <div class="mobile-menu-inner">
+            <div class="mobile-profile">
+                <img src="images/hum.jpeg" alt="Demis Hassabis">
+            </div>
+            <ul class="mobile-nav-list">
+                <li><a href="biography.html"><span class="arrow">&#8594;</span> Biography</a></li>
+                <li><a href="deepmind.html"><span class="arrow">&#8594;</span> DeepMind</a></li>
+                <li><a href="awards.html"><span class="arrow">&#8594;</span> Award</a></li>
+                <li><a href="references.html"><span class="arrow">&#8594;</span> References</a></li>
+                <li><a href="contact.html"><span class="arrow">&#8594;</span> Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
 
     <main>
-        <selection class="" hero">
-            <div class="background-image">
-            </div>
+        <section class="hero">
+            
+
             <div class="hero-content">
                 <h1>CEO of Google <br> DeepMind</h1>
             </div>
             <div class="hero-image">
-                <img src="images/homepage.png" alt="Demis Hassabis">
+                <img class="core-hero-image" src="images/homepage.png" alt="Demis Hassabis">
             </div>
             <div class="hero-icons">
 
@@ -51,11 +71,11 @@
             <div class="hero_name">
                 <h2>Demis Hassabis</h2>
             </div>
-        </selection>
+        </section>
     </main>
     <footer>
         <div class="footer_left">
-            <a href="" references.html">
+            <a href="references.html">
                 References
             </a>
         </div>
@@ -66,11 +86,13 @@
             </small>
         </div>
         <div class="footer_right">
-            <a href="contact.html">
+            <a href="contacts.html">
                 Contact
             </a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
